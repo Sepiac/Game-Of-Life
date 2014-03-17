@@ -1,0 +1,22 @@
+package execution;
+
+import computation.InversionStepper;
+
+import rendering.ConsoleRenderer;
+import foundation.Grid;
+
+public class ConsoleExcecuter {
+	public static void main(String[] args) {
+		int squaresize = 10;
+		Grid g = new Grid();
+		g.initSquare(squaresize, squaresize);
+		
+		ConsoleRenderer.render(g, squaresize, squaresize);
+		
+		g.randomizieSquare(squaresize, squaresize);
+		ConsoleRenderer.render(g, squaresize, squaresize);
+		
+		ConsoleRenderer.render(InversionStepper.step(g), squaresize, squaresize);
+		g.getMap().get("tttttt");
+	}
+}

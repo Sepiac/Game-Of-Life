@@ -1,0 +1,11 @@
+package computation;
+
+public class Utils {
+	public static String getNorthNeighborKey(int x, int y) {
+		return y-1 + "," + x;
+	}
+	
+	public static String getNorthEastNeighborKey(int x, int y) {
+		return y-1 + "," + x;
+	}
+}

@@ -1,0 +1,14 @@
+package execution;
+
+import rendering.ConsoleRenderer;
+import foundation.Grid;
+
+public class ConsoleExcecuter {
+	public static void main(String[] args) {
+		Grid g = new Grid();
+		g.initSquare(4, 4);
+		
+		ConsoleRenderer cr = new ConsoleRenderer();
+		cr.render(g, 4, 4);
+	}
+}

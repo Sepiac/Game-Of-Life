@@ -1,0 +1,19 @@
+package foundation;
+
+import java.util.HashMap;
+
+public class Grid {
+	private HashMap map;
+
+	public HashMap getMap() {
+		return map;
+	}
+
+	public void setMap(HashMap map) {
+		this.map = map;
+	}
+	
+	public Grid() {
+		this.map = new HashMap();
+	}
+}

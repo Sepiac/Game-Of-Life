@@ -1,0 +1,67 @@
+package computation;
+
+import foundation.Grid;
+
+public class Utils {
+	public static String getNorthNeighborKey(int x, int y) {
+		return x+","+(y-1);
+	}
+	
+	public static String getNorthEastNeighborKey(int x, int y) {
+		return (x+1)+","+(y-1);
+	}
+	
+	public static String getEastNeighborKey(int x, int y) {
+		return (x+1)+","+(y);
+	}
+	
+	public static String getSouthEastNeighborKey(int x, int y) {
+		return (x+1)+","+(y+1);
+	}
+	
+	public static String getSouthNeighborKey(int x, int y) {
+		return x+","+(y+1);
+	}
+	
+	public static String getSouthWestNeighborKey(int x, int y) {
+		return (x-1)+","+(y+1);
+	}
+	
+	public static String getWestNeighborKey(int x, int y) {
+		return (x-1)+","+y;
+	}
+	
+	public static String getNorthWestNeighborKey(int x, int y) {
+		return (x-1)+","+(y-1);
+	}
+	
+	public static int getNumberOfLivingNeighbors(int x, int y, Grid g) {
+		int count=0;
+		if(g.getMap().get(getNorthNeighborKey(x, y)).isAlive()) {
+			count ++;
+		}
+		if(g.getMap().get(getNorthEastNeighborKey(x, y)).isAlive()) {
+			count ++;
+		}
+		if(g.getMap().get(getEastNeighborKey(x, y)).isAlive()) {
+			count ++;
+		}
+		if(g.getMap().get(getSouthEastNeighborKey(x, y)).isAlive()) {
+			count ++;
+		}
+		if(g.getMap().get(getSouthNeighborKey(x, y)).isAlive()) {
+			count ++;
+		}
+		if(g.getMap().get(getSouthWestNeighborKey(x, y)).isAlive()) {
+			count ++;
+		}
+		if(g.getMap().get(getNorthWestNeighborKey(x, y)).isAlive()) {
+			count ++;
+		}
+		if(g.getMap().get(getNorthWestNeighborKey(x, y)).isAlive()) {
+			count ++;
+		}
+		
+		return count;
+	}
+}

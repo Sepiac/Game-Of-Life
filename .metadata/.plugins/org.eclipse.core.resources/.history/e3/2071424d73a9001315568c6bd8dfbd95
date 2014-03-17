@@ -1,0 +1,27 @@
+package computation;
+
+public class Utils {
+	public static String getNorthNeighborKey(int x, int y) {
+		return x+","+(y-1);
+	}
+	
+	public static String getNorthEastNeighborKey(int x, int y) {
+		return (x+1)+","+(y-1);
+	}
+	
+	public static String getEastNeighborKey(int x, int y) {
+		return (x+1)+","+(y);
+	}
+	
+	public static String getSouthEastNeighborKey(int x, int y) {
+		return (x+1)+","+(y+1);
+	}
+	
+	public static String getSouthNeighborKey(int x, int y) {
+		return x+","+(y+1);
+	}
+	
+	public static String getSouthWestNeighborKey(int x, int y) {
+		return (x-1)+","+(y+1);
+	}
+}

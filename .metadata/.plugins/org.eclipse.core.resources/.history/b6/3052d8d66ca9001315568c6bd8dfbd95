@@ -1,0 +1,13 @@
+package rendering;
+
+import foundation.Grid;
+
+public class ConsoleRenderer {
+	public static void render(Grid g, int width, int height) {
+		for(int i=0; i<width; i++) {
+			for(int j=0; j<height; j++) {
+				System.out.print(g.getCell(i, j));
+			}
+		}
+	}
+}

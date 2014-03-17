@@ -1,0 +1,7 @@
+package computation;
+
+import foundation.Grid;
+
+public interface Stepper {
+	public Grid step(Grid g);
+}

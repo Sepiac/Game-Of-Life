@@ -1,0 +1,9 @@
+package computation;
+
+import foundation.Grid;
+
+public class ConwayStepper {
+	public static Grid step(Grid g) {
+		
+	}
+}
