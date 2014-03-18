@@ -1,5 +1,0 @@
-package computation;
-
-public interface Stepper {
-
-}

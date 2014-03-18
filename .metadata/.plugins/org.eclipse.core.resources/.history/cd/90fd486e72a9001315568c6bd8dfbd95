@@ -1,7 +1,0 @@
-package computation;
-
-public class Utils {
-	public static String getNorthNeighborKey(int x, int y) {
-		return "";
-	}
-}
