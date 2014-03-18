@@ -10,7 +10,7 @@ import rendering.ConsoleRenderer;
 import foundation.Cell;
 import foundation.Grid;
 
-public class ConsoleExcecuter {
+public class ConsoleExecuter {
 	public static void main(String[] args) {
 		int squaresize = 20;
 		Grid g = new Grid();
